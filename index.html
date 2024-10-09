@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <title>Steeven Gómez - Curriculum Vitae</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Mi Currículum Vitae</title>
+  <meta name="viewport"    content="width=device-width,initial-scale=1.0">
+  <meta name="keywords"    content="desarrollador web, phyton, javascrypt">
+  <meta name="description" content="estudiante de quinto semestre buscando oportunidades para mejorar">
+  <meta name="author"      content="Steeven Gómez">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,12 +21,18 @@
       <li><a href="#educacion">Educación</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#Contáctanos">Contáctanos</a></li>
+      <li><a href="#Formulario">Formulario</a></li>
+      <li><a href="#table">table</a></li>
       </ul>
     </nav>
     <main>
       <section id="resumen">
       <h2>Resumen</h2>
       <p>Conocedor de varios idiomas de programación como java, phyton, javascrypt, sql y C.</p>
+
+      <map></map>
+        <title>Tabla de datos</title>    
       </section>
       
       <section id="experiencia">
@@ -57,6 +66,103 @@
         <li>Encriptador simple de 32, 64, 128 y 256 bits</li>
       </ul>
       </section>
+
+      <section id="Contáctanos">
+        <h2>Contáctanos</h2>
+
+        <h3>Ejemplo de Multimedia en HTML</h3>
+
+        <h4>Imagen</h4>
+        <img src="https://placehold.co/600x400" alt="Placeholder de Imagen" width="300">
+    
+        <h4>Video</h4>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de YouTube"></iframe>
+        
+        <h4>Mapa de Google</h4>
+        <iframe 
+        id="Map"
+        title="Gmaps"
+        width="300" 
+        height="200"
+        src="https://maps.app.goo.gl/spLVS2RTEdnFvCCG8">
+        </iframe>
+      </section>
+
+      <section id="Formulario">
+        <h4>Formulario</h4>
+        <form>
+          <div>
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+          
+          <div>
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div>
+              <label for="experiencia">Experiencia Laboral:</label>
+              <textarea id="experiencia" name="experiencia" rows="3" required></textarea>
+          </div>
+          
+          <div>
+              <label for="educacion">Educación:</label>
+              <textarea id="educacion" name="educacion" rows="3" required></textarea>
+          </div>
+          
+          <div>
+              <label>Habilidades Técnicas:</label>
+              <input type="checkbox" name="habilidades" value="HTML"> 
+              <input type="checkbox" name="habilidades" value="CSS"> 
+              <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
+          </div>
+          <div>
+            <label for="intereses">Intereses:</label>
+            <select id="intereses" name="intereses">
+                <option value="desarrollo">Desarrollo Web</option>
+                <option value="diseno">Diseño Gráfico</option>
+                <option value="marketing">Marketing Digital</option>
+            </select>
+          </div>
+      
+          <div>
+              <button type="submit">Enviar</button>
+          </div>
+        </form>
+
+      </section>
+
+      <section id="table">
+        <h4>Experiencia Laboral</h4>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Puesto</th>
+                    <th>Años de Experiencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Acme Corporation</td>
+                    <td>Desarrollador Web</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Tech Solutions</td>
+                    <td>Ingeniero de Software</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Web Innovations</td>
+                    <td>Frontend Developer</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+    
     </main>
     <footer>
       <p>© Steeven Gómez - 2024</p>
