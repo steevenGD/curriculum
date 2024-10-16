@@ -1,52 +1,32 @@
 
-*{
+
+* {
+    /* Familia de fuentes */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
+    /* Grosor de la fuente 200 */
+    font-weight: 200; 
 }
 
 h1 {
+    /* Alineación del texto */
     text-align: center;
-    font-weight: bold;
-}
+    /* Grosor de la fuente negrita */ 
+    font-weight: bold; 
+  }
 
 /* Estilos para el elemento con ID "foto" */
-#foto {
+#photo {
     width: 200px;   /* Ancho del elemento */
     height: auto;   /* Alto del elemento automático */
 }
 
 /* Estilos para el elemento con la clase "subtitle" */
 .subtitle {
-    color: rgba(107, 114, 128, 0.89);  /* Color del texto */
+    color: rgba(107 114 128 / 0.89);  /* Color del texto */
     text-transform: uppercase;           /* Transformación del texto a mayúsculas */
 }
 
 section {
-    /*...
-
-
-    /* borde redondeado con un radio de 5 píxeles */
- 
-    /* en navegadores basados en WebKit, 
-    como versiones antiguas de Safari y Chrome. */
-    -webkit-border-radius: 5px; 
- 
-    /* en navegadores antiguos de Mozilla, 
-    como Firefox.  */
-    -moz-border-radius: 5px;    
- 
-    /* en navegadores modernos. */
-    border-radius: 5px;      
-
-
-    /*...
-    /* sombra a un elemento */
-
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-
-
     /* margen (espacio externo) superior, derecho, abajo e izquierda */
     margin: 4px 2px 8px 2px; 
  
@@ -63,58 +43,92 @@ section {
     dándoles un valor específico de 1.2% para esos lados. */
  
     padding-left: 1.2%; 
-    padding-right: 1.2%; 
-  }
+    padding-right: 1.2%;   
+    
+    /* borde redondeado con un radio de ... píxeles */
+    border-radius: 30px;
+   /* en navegadores basados en WebKit, 
+   como versiones antiguas de Safari y Chrome. */
+   -webkit-border-radius: 30px; 
 
-  /* Incluir la fuente Poppins para todas las etiquetas */
-* {
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 30px;    
+
+    /*Sombra a un elemento*/
+    -webkit-box-shadow: 20px 21px 15px 5px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 20px 21px 15px 5px rgba(235, 234, 234, 0.60);
+    box-shadow: 20px 1px 15px 5px rgba(235, 234, 234, 0.60);
+}
+
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Eliminar el subrayado de todas las etiquetas <a> */
 a {
     text-decoration: none; /* Elimina el subrayado */
 }
 
-/* Subrayar al pasar el mouse por encima en los <a> dentro de <nav> */
 nav a:hover {
     text-decoration: underline; /* Subraya al pasar el mouse */
 }
 
-/* Eliminar las viñetas de todas las etiquetas <li> */
 li {
     list-style-type: none; /* Elimina las viñetas */
 }
 
-/* Centrar la etiqueta <ul> que se encuentra dentro <footer> */
 footer ul {
     text-align: center; /* Centra el contenido del <ul> */
 }
 
-nav ul {
 
+nav ul {
     /* Modelo de diseño flexible */
     display: flex;									
     justify-content: space-around;
-   
 }
 
 section form {
-
     /* Modelo de diseño en cuadrícula */
     display: grid;									
     row-gap: 0.5rem;
-
 }
 
 
+/*
+#resumen{
+    
+    display: flex;
+    /* Distribuye el espacio entre y alrededor
+    de los items en el eje principal */
+    justify-content: space-evenly;
+    /* Alinea los elementos al centro dentro
+    del bloque respecto con el eje transversal */
+    align-items: center;
+    /* Eje principal: por columna */
+    flex-direction: column;
+    /* Altura de 24% del área de visualización */
+    height: 24vh;
+    /* Apilamiento de elementos: ajustado hasta ocupar
+    el máximo */
+    flex-wrap: wrap;
+}
+#resumen h2	{
+    width: 50%;
+}	
+#resumen p	{
+    width: 50%;
+}	
+#resumen img {
+    max-width: 50%;
+}
+
 
 #resumen {
-
     /* Modelo de diseño en cuadrícula */
-  display: grid;
+    display: grid;
 
-  /* Distribuye el espacio entre y alrededor
+    /* Distribuye el espacio entre y alrededor
              de los items en el eje principal */
     justify-content: space-around;
 
@@ -138,4 +152,9 @@ section form {
 #resumen img {
     max-width: 90%;
   grid-area: D;
+}
+
+#map script{
+    height: 300px; /* Altura del mapa */
+    width: 500px; /* Ancho del mapa */
 }
