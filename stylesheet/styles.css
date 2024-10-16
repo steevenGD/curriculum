@@ -90,3 +90,52 @@ li {
 footer ul {
     text-align: center; /* Centra el contenido del <ul> */
 }
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;									
+    justify-content: space-around;
+   
+}
+
+section form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
+
+
+
+#resumen {
+
+    /* Modelo de diseño en cuadrícula */
+  display: grid;
+
+  /* Distribuye el espacio entre y alrededor
+             de los items en el eje principal */
+    justify-content: space-around;
+
+    /* Alineación de un elemento dentro del bloque
+        que lo contiene, considerando el eje transversal */
+    align-items: stretch;
+
+    /* Plantilla con áreas en la cuadrícula */
+    grid-template-areas: "A D" 
+                         "B D";
+}
+
+#resumen h2 {
+  grid-area: A;
+}
+
+#resumen p {
+  grid-area: B;
+}
+
+#resumen img {
+    max-width: 90%;
+  grid-area: D;
+}
