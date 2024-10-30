@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Ejercicios"
+		},
+		{
+			"path": "../landing"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "curriculum"
+	}
+}

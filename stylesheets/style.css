@@ -16,6 +16,7 @@ h1 {
 
 /* Estilos para el elemento con ID "foto" */
 #photo {
+    text-align: center;
     width: 200px;   /* Ancho del elemento */
     height: auto;   /* Alto del elemento automático */
 }
@@ -95,35 +96,6 @@ section form {
 }
 
 
-/*
-#resumen{
-    
-    display: flex;
-    /* Distribuye el espacio entre y alrededor
-    de los items en el eje principal */
-    justify-content: space-evenly;
-    /* Alinea los elementos al centro dentro
-    del bloque respecto con el eje transversal */
-    align-items: center;
-    /* Eje principal: por columna */
-    flex-direction: column;
-    /* Altura de 24% del área de visualización */
-    height: 24vh;
-    /* Apilamiento de elementos: ajustado hasta ocupar
-    el máximo */
-    flex-wrap: wrap;
-}
-#resumen h2	{
-    width: 50%;
-}	
-#resumen p	{
-    width: 50%;
-}	
-#resumen img {
-    max-width: 50%;
-}
-
-
 #resumen {
     /* Modelo de diseño en cuadrícula */
     display: grid;
@@ -157,4 +129,23 @@ section form {
 #map script{
     height: 300px; /* Altura del mapa */
     width: 500px; /* Ancho del mapa */
+}
+
+ol {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.educacion li{
+    list-style-type: none;        /* Quitar el estilo de lista por defecto */
+    background-color: #f0f8ff;    /* Fondo claro para resaltar el contenido */
+    border: 1px solid #d3d3d3;    /* Borde suave para delimitar la tarjeta */
+    border-radius: 8px;           /* Esquinas redondeadas */
+    padding: 15px;                /* Espacio interno */
+    margin: 10px;                 /* Separación entre tarjetas */
+    width: 200px;                 /* Ancho fijo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+    text-align: center;           /* Centrar texto e imágenes */
+    font-family: Arial, sans-serif;
 }

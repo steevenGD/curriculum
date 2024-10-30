@@ -1,0 +1,55 @@
+section#Formulario {
+    max-width: 400px;                    /* Ancho máximo del formulario */
+    margin: 20px auto;                   /* Centrar horizontalmente */
+    padding: 20px;                       /* Espacio interno */
+    background-color: #f9f9f9;           /* Fondo suave */
+    border: 1px solid #ddd;              /* Borde ligero */
+    border-radius: 8px;                  /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: Arial, sans-serif;
+}
+
+#Formulario h4 {
+    text-align: center;                  /* Título centrado */
+    color: #333;                         /* Color oscuro */
+    margin-bottom: 20px;                 /* Espacio debajo del título */
+}
+
+#Formulario label {
+    display: block;                      /* Cada etiqueta ocupa toda la línea */
+    font-weight: bold;
+    margin: 10px 0 5px;                  /* Espacio alrededor de etiquetas */
+    color: #555;                         /* Color de texto */
+}
+
+#Formulario input[type="text"],
+#Formulario input[type="email"],
+#Formulario textarea,
+#Formulario select {
+    width: 100%;                         /* Ancho completo del campo */
+    padding: 8px;                        /* Espacio interno del campo */
+    border: 1px solid #ccc;              /* Borde del campo */
+    border-radius: 4px;                  /* Bordes redondeados */
+    margin-bottom: 15px;                 /* Espacio entre campos */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#Formulario input[type="checkbox"] {
+    margin-right: 5px;                   /* Espacio a la derecha de la casilla */
+}
+
+#Formulario button {
+    width: 100%;                         /* Ancho completo del botón */
+    padding: 10px;                       /* Espacio interno */
+    background-color: #4CAF50;           /* Color de fondo */
+    color: white;                        /* Color del texto */
+    border: none;                        /* Sin borde */
+    border-radius: 4px;                  /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#Formulario button:hover {
+    background-color: #45a049;           /* Color al pasar el mouse */
+}
