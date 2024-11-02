@@ -1,12 +1,11 @@
 
-
 * {
     /* Familia de fuentes */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* Grosor de la fuente 200 */
     font-weight: 200; 
 }
-
+  
 h1 {
     /* Alineación del texto */
     text-align: center;
@@ -21,131 +20,122 @@ h1 {
     height: auto;   /* Alto del elemento automático */
 }
 
-/* Estilos para el elemento con la clase "subtitle" */
-.subtitle {
-    color: rgba(107 114 128 / 0.89);  /* Color del texto */
-    text-transform: uppercase;           /* Transformación del texto a mayúsculas */
-}
-
-section {
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px; 
- 
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd; 
- 
-    /* relleno (espacio interno) de 
-    1.5% en la parte superior e inferior y 
-    0.8% a los lados derecho e izquierdo. */
- 
-    padding: 1.5% 0.8%; 
- 
-    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
-    dándoles un valor específico de 1.2% para esos lados. */
- 
-    padding-left: 1.2%; 
-    padding-right: 1.2%;   
-    
-    /* borde redondeado con un radio de ... píxeles */
-    border-radius: 30px;
-   /* en navegadores basados en WebKit, 
-   como versiones antiguas de Safari y Chrome. */
-   -webkit-border-radius: 30px; 
-
-   /* en navegadores antiguos de Mozilla, 
-   como Firefox.  */
-   -moz-border-radius: 30px;    
-
-    /*Sombra a un elemento*/
-    -webkit-box-shadow: 20px 21px 15px 5px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 20px 21px 15px 5px rgba(235, 234, 234, 0.60);
-    box-shadow: 20px 1px 15px 5px rgba(235, 234, 234, 0.60);
+#juego {
+    text-align: center;
+    width: 200px;   /* Ancho del elemento */
+    height: auto;   /* Alto del elemento automático */
 }
 
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-a {
-    text-decoration: none; /* Elimina el subrayado */
+/* Estilos para el contenedor principal */
+main {
+    display: grid;                         /* Activa el diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr;       /* Define dos columnas de igual tamaño */
+    gap: 20px;                             /* Espacio entre los elementos */
+    padding: 20px;                         /* Espacio interno alrededor del contenedor */
 }
 
-nav a:hover {
-    text-decoration: underline; /* Subraya al pasar el mouse */
+/* Estilos para cada sección dentro del main */
+main section {
+    background-color: #f9fafb;            /* Fondo claro para cada sección */
+    padding: 15px;                         /* Espacio interno */
+    border-radius: 8px;                   /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-li {
-    list-style-type: none; /* Elimina las viñetas */
-}
-
-footer ul {
-    text-align: center; /* Centra el contenido del <ul> */
-}
-
-
-nav ul {
-    /* Modelo de diseño flexible */
-    display: flex;									
-    justify-content: space-around;
-}
-
-section form {
-    /* Modelo de diseño en cuadrícula */
-    display: grid;									
-    row-gap: 0.5rem;
-}
-
-
+/* Para que la sección de resumen ocupe dos columnas */
 #resumen {
-    /* Modelo de diseño en cuadrícula */
-    display: grid;
-
-    /* Distribuye el espacio entre y alrededor
-             de los items en el eje principal */
-    justify-content: space-around;
-
-    /* Alineación de un elemento dentro del bloque
-        que lo contiene, considerando el eje transversal */
-    align-items: stretch;
-
-    /* Plantilla con áreas en la cuadrícula */
-    grid-template-areas: "A D" 
-                         "B D";
+    grid-column: span 2;                  /* Hace que la sección ocupe las dos columnas */
 }
 
-#resumen h2 {
-  grid-area: A;
+/* Tabla de experiencia */
+#table {
+    margin-top: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-transform: capitalize;
+    padding: 10px;
+    text-align: center;
+  }
+
+h4 {
+    font-size: 1.5em; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    margin: 15px 0; /* Espaciado superior e inferior */
+    border-bottom: 2px solid #4CAF50; /* Línea debajo del texto */
+    padding-bottom: 5px; /* Espaciado entre el texto y la línea */
 }
 
-#resumen p {
-  grid-area: B;
+img {
+    border-radius: 75px; /* Bordes ligeramente redondeados */
+    max-width: 100%;    /* Asegura que las imágenes no excedan el ancho de su contenedor */
+    height: auto;       /* Mantiene la proporción de las imágenes */
+    display: block;     /* Hace que las imágenes se comporten como un bloque */
+    margin: 0 auto;     /* Centra las imágenes dentro de su contenedor */
 }
 
-#resumen img {
-    max-width: 90%;
-  grid-area: D;
+.educacion {
+    display: grid;                   /* Activa el diseño de cuadrícula */
+    grid-template-columns: 1fr 1fr; /* Define columnas automáticas que se ajusten al ancho disponible */
+    gap: 10px;                      /* Espacio entre los elementos de la cuadrícula */
+    justify-items: center;    
+    align-items: center;
 }
 
-#map script{
-    height: 300px; /* Altura del mapa */
-    width: 500px; /* Ancho del mapa */
+.educacion li {
+    list-style: none;
+    text-align: center;                  /* Centra el texto dentro de cada lista */
+    font-size: 25px;                     /* Tamaño de fuente para los nombres */
+    color: #656565;                         /* Color del texto */
+    margin: 5px;                     /* Espaciado vertical entre los elementos */
+    font-weight: bold;                   /* Negrita para los nombres */
+    text-transform: uppercase;           /* Transformar el texto a mayúsculas */
 }
 
-ol {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
+.educacion img {
+    width: 100%;                    /* Hace que las imágenes ocupen el ancho completo de su contenedor */
+    height: auto;                   /* Mantiene la proporción de las imágenes */
+    border-radius: 8px;            /* Bordes ligeramente redondeados */
 }
 
-.educacion li{
-    list-style-type: none;        /* Quitar el estilo de lista por defecto */
-    background-color: #f0f8ff;    /* Fondo claro para resaltar el contenido */
-    border: 1px solid #d3d3d3;    /* Borde suave para delimitar la tarjeta */
-    border-radius: 8px;           /* Esquinas redondeadas */
-    padding: 15px;                /* Espacio interno */
-    margin: 10px;                 /* Separación entre tarjetas */
-    width: 200px;                 /* Ancho fijo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
-    text-align: center;           /* Centrar texto e imágenes */
-    font-family: Arial, sans-serif;
+/* Estilos para centrar el video */
+#video-container {
+    display: flex;                   /* Utiliza flexbox para el centrado */
+    justify-content: center;         /* Centra el contenido horizontalmente */
+    align-items: center;             /* Centra el contenido verticalmente (opcional, dependiendo del uso) */
+    margin: 20px 0;                 /* Margen superior e inferior */
 }
+ 
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #ddd;
+  }
+  

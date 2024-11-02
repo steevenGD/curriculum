@@ -1,0 +1,29 @@
+/* Estilos para el encabezado */
+header {
+    /* Color de fondo y espacio interno */
+    background-color: #f3f4f6;
+    padding: 20px;
+
+    /* Centrar texto y espaciar elementos en el header */
+    text-align: center;
+    margin-bottom: 20px;
+
+    /* Sombra para darle profundidad */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título principal (nombre) */
+header h1 {
+    font-size: 2.5em;          /* Tamaño de la fuente grande */
+    color: #111827;            /* Color oscuro para el texto */
+    margin: 0;                 /* Quitar margen extra */
+    font-weight: bold;         /* Grosor de la fuente */
+}
+
+/* Estilo para el párrafo de contacto debajo del nombre */
+header p {
+    font-size: 1em;            /* Tamaño de fuente normal */
+    color: #4b5563;            /* Color gris */
+    margin-top: 8px;           /* Separación superior */
+    font-weight: 300;          /* Fuente ligera */
+}

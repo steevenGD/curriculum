@@ -1,0 +1,114 @@
+/* Secciones del contenido principal */
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 4px 2px 8px 2px;
+    box-shadow: 20px 1px 15px 5px rgba(235, 234, 234, 0.60);
+    border: 0.2pt solid #cedddd;
+    padding: 1.5% 1.2%;
+}
+  
+.subtitle {
+    color: rgba(107, 114, 128, 0.89);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(107, 114, 128, 0.5);
+    padding-bottom: 5px;
+}
+  
+#photo {
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+  
+#resumen {
+    /* Modelo de diseño en cuadrícula */
+    display: grid;
+    
+    /* Distribuye el espacio entre y alrededor
+             de los items en el eje principal */
+    justify-content: space-around;
+
+    /* Alineación de un elemento dentro del bloque
+        que lo contiene, considerando el eje transversal */
+    align-items:center;
+
+    /* Plantilla con áreas en la cuadrícula */
+    grid-template-areas: "A D" 
+                         "B D";
+}
+
+#resumen h2 {
+  grid-area: A;
+}
+
+#resumen p {
+  grid-area: B;
+}
+
+#resumen img {
+  max-width: 100%;
+  grid-area: D;
+}
+
+/* Estilos para el contenedor del mapa */
+#map iframe {
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    height: 400px;               /* Altura fija del mapa */
+    border-radius: 8px;         /* Bordes redondeados */
+    overflow: hidden;            /* Esconde cualquier desbordamiento */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Opcional: Estilos para el encabezado del mapa */
+#map h4 {
+    text-align: center;          /* Centrar el título */
+    text-transform:capitalize;
+}
+
+#habilidades,
+#proyectos {
+    display: flex;                  /* Usar flexbox para disposición horizontal */
+    align-items: center;           /* Alinear elementos verticalmente al centro */
+    justify-content: space-between; /* Espacio entre elementos */
+    background-color: #fff;        /* Fondo blanco para cada sección */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Estilo para las listas */
+#lista-habilidades,
+#lista-proyectos {
+    flex: 1;                       /* Tomar el mismo espacio */
+    margin: 0 20px;               /* Margen lateral entre listas e imágenes */
+}
+
+/* Estilo para las imágenes */
+#habilidades img,
+#proyectos img {
+    width: 250px;                  /* Ancho fijo para las imágenes */
+    border-radius: 5px;           /* Bordes redondeados */
+    margin-right: 20px;           /* Margen a la derecha de la imagen */
+}
+
+/* Estilo para las listas */
+#lista-habilidades ul li{
+    list-style: none;         /* Eliminar viñetas de la lista */
+    padding: 10px;                /* Espaciado interno en los elementos de la lista */
+    margin: 5px 0;                /* Margen entre elementos de la lista */
+    background-color: #f9f9f9;    /* Fondo gris claro para cada elemento */
+    border: 1px solid #e0e0e0;    /* Borde gris claro */
+    border-radius: 5px;           /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición para efecto hover */
+}
+#lista-proyectos ul li{
+    list-style: none;         /* Eliminar viñetas de la lista */
+    padding: 10px;                /* Espaciado interno en los elementos de la lista */
+    margin: 5px 0;                /* Margen entre elementos de la lista */
+    background-color: #f9f9f9;    /* Fondo gris claro para cada elemento */
+    border: 1px solid #e0e0e0;    /* Borde gris claro */
+    border-radius: 5px;           /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición para efecto hover */
+}

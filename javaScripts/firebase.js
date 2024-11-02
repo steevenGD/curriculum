@@ -94,4 +94,4 @@ window.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("load", loaded)
 
 
-//TERMINAR
+//FALTA TERMINAR

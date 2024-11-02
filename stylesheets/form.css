@@ -1,6 +1,4 @@
 section#Formulario {
-    max-width: 400px;                    /* Ancho máximo del formulario */
-    margin: 20px auto;                   /* Centrar horizontalmente */
     padding: 20px;                       /* Espacio interno */
     background-color: #f9f9f9;           /* Fondo suave */
     border: 1px solid #ddd;              /* Borde ligero */
@@ -10,6 +8,7 @@ section#Formulario {
 }
 
 #Formulario h4 {
+    text-transform: uppercase;
     text-align: center;                  /* Título centrado */
     color: #333;                         /* Color oscuro */
     margin-bottom: 20px;                 /* Espacio debajo del título */
